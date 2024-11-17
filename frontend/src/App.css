@@ -1,0 +1,212 @@
+#root,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  max-height: 100vh;
+}
+
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  margin-top: 10px;
+
+}
+
+#heart::before,
+#heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 52px;
+  height: 80px;
+  border-radius: 50px 50px 0 0;
+  background: var(--color, blue)
+}
+
+#heart::before {
+  left: 50px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+#heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.rainbow {
+  z-index: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  left: 50%;
+  top: 50%;
+  margin-left: -600px;
+  margin-top: -200px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+@media(max-width: 600px) {
+  .rainbow {
+    width: 600px;
+    height: 600px;
+    margin-left: -300px;
+    margin-top: -100px;
+  }
+}
+
+.rainbow-arc {
+  background-color: transparent;
+  display: flex;
+  flex: 1;
+  border-radius: 50%;
+  border: 20px solid transparent;
+}
+
+.red {
+  border-top-color: tomato;
+}
+
+.orange {
+  border-top-color: orange;
+}
+
+.yellow {
+  border-top-color: yellow;
+}
+
+.green {
+  border-top-color: lawngreen;
+}
+
+.blue {
+  border-top-color: deepskyblue;
+}
+
+.indigo {
+  border-top-color: mediumslateblue;
+}
+
+.purple {
+  border-top-color: mediumorchid;
+}
+
+/* Clouds */
+
+.cloud {
+  background: white;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -64px;
+}
+
+.cloud::before,
+.cloud::after {
+  background: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: block;
+  content: " ";
+}
+
+.cloud::before {
+  left: 120px;
+  top: 50px;
+}
+
+.cloud::after {
+  left: -60px;
+  top: -50px;
+  /* Not sure why this needs to be different? */
+}
+
+.cloud.left {
+  margin-left: -435px;
+}
+
+.cloud.right {
+  margin-left: 300px;
+}
+
+@media(max-width: 600px) {
+  .rainbow {
+    top: 20%;
+  }
+
+  .cloud {
+    top: 25%;
+
+  }
+
+  .cloud.left {
+    margin-left: -10px;
+    left: -30%;
+  }
+
+  .cloud.right {
+    margin-left: 10px;
+    left: 86%;
+  }
+
+  .main {
+    top: 0;
+    margin-top:-96px;
+  }
+}
+
+.main {
+  position: absolute;
+  top: 15%;
+  z-index: 99999;
+}
+
+
+.gay {
+  z-index: 2;
+}
